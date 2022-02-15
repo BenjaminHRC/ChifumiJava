@@ -12,3 +12,7 @@ L'espace de travail contient deux dossiers par défaut, où :
 - `lib` : le dossier pour maintenir les dépendances
 
 Pendant ce temps, les fichiers de sortie compilés seront générés dans le dossier `bin` par défaut.
+
+## Exécution du jar
+
+En ligne de commande : java -jar Chifumi.jar
