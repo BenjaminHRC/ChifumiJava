@@ -1,6 +1,6 @@
 // class qui va perttre de compter les scores et partie
 public class Compteurs {
-    int max_partie = 5;
+    int max_partie = 6;
     int nb_partie = 0;
     int score_player = 0;
     int score_adversaire = 0;
