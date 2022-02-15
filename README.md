@@ -1,18 +1,14 @@
-## Getting Started
+## Commencer
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Bienvenue sur mon ChiFuMi version "The Big Bang Theory", incluant donc le lézard et spock (un scientifique).
 
-## Folder Structure
+Il a des codes sur internet qui permet de faire un ChiFuMi classic, j'ai préféré ne pas les copier et de réfléchir par moi même. Je pense que mon code est moin optimisé que ceux d'internet, mais il était important pour moi de le concevoir par moi même.
 
-The workspace contains two folders by default, where:
+## Structure des dossiers
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+L'espace de travail contient deux dossiers par défaut, où :
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- `src` : le dossier pour maintenir les sources
+- `lib` : le dossier pour maintenir les dépendances
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Pendant ce temps, les fichiers de sortie compilés seront générés dans le dossier `bin` par défaut.
