@@ -6,22 +6,23 @@ import java.io.InputStreamReader;
 import java.lang.Math;
 
 public class App {
-    static Compteurs compteur = new Compteurs();
+    static Compteurs compteur = new Compteurs(); // instanciation de la class Compteur
 
-    public static void main(String[] args) throws Exception {
-        // int adversaire = 2;
+    public static void main(String[] args) throws Exception { // la fonction pricipale qui va etre executer
+        // tant que le nombre de partie jouer est inferieure au nombre de partie max
         while (compteur.nb_partie < compteur.max_partie) {
-            game();
+            game(); // lance le jeu
         }
-        int winner = Math.max(compteur.score_player, compteur.score_adversaire);
-        if (compteur.score_player == winner) {
+        // si le score du joueur est superieure au score de l'adversaire
+        if (compteur.score_player > compteur.score_adversaire) {
             System.out.println("Vous avez gagner félicitation");
-        }
-        if (compteur.score_adversaire == winner) {
+        } else {
             System.out.println("Vous avez perdue la prochaine fois sera la bonne");
         }
     }
 
+    // méthode rules permet de déterminé les regles du jeu notament le gagnant de
+    // chaque manche
     public static void rules(int player, int adversaire, int pierre, int feuille, int ciseau, int lezard, int spock)
             throws IOException {
         if (player == pierre) {
@@ -257,13 +258,16 @@ public class App {
         }
     }
 
+    // la méthode game va permettre de d'executer le jeu. Méthode de type void (non
+    // typé)
     public static void game() throws IOException {
         int pierre = 0;
         int feuille = 1;
         int ciseau = 2;
         int lezard = 3;
         int spock = 4;
-        int adversaire = (int) (Math.random() * 5);
+        int adversaire = (int) (Math.random() * 5); // génére un nombre aléatoire entre 0 et 4
+        // BufferedReader va permettre de lire ce que l'utilisateur a taper
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("Légende :");
@@ -275,7 +279,8 @@ public class App {
         System.out.println(" ");
         System.out.print("Choissiser votre main : ");
 
-        int player = Integer.parseInt(reader.readLine());
-        rules(player, adversaire, pierre, feuille, ciseau, lezard, spock);
+        int player = Integer.parseInt(reader.readLine()); // lance la saisie et recupere la saisie et le transforme en
+                                                          // integer
+        rules(player, adversaire, pierre, feuille, ciseau, lezard, spock); // execute la methode rules
     }
 }
