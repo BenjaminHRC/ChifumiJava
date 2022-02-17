@@ -1,22 +1,22 @@
 // class qui va perttre de compter les scores et partie
 public class Compteurs {
-    int max_partie = 6;
-    int nb_partie = 0;
-    int score_player = 0;
-    int score_adversaire = 0;
+    int maxPartie = 6;
+    int nbPartie = 0;
+    int scorePlayer = 0;
+    int scoreAdversaire = 0;
 
     // méthode de type integer va permettre d'incrémenter le nombre de la partie
     public int incrementPartie() {
-        return this.nb_partie += 1; // incremente le nombre de partie
+        return this.nbPartie += 1; // incremente le nombre de partie
     }
 
     // méthode de type integer va permettre d'incrémenter le score du joueur
     public int incrementPlayer() {
-        return this.score_player += 1; // incremente le score du joueur
+        return this.scorePlayer += 1; // incremente le score du joueur
     }
 
     // méthode de type integer va permettre d'incrémenter le score de l'adversaire
     public int incrementAdversaire() {
-        return this.score_adversaire += 1; // incremente le score de l'adersaire
+        return this.scoreAdversaire += 1; // incremente le score de l'adersaire
     }
 }

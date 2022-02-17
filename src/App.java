@@ -15,12 +15,12 @@ public class App {
 
     public static void main(String[] args) throws Exception { // la fonction pricipale qui va etre executer
         // tant que le nombre de partie jouer est inferieure au nombre de partie max
-        while (compteur.nb_partie < compteur.max_partie) {
+        while (compteur.nbPartie < compteur.maxPartie) {
             // si score joueur ou adversaire egale a 3
-            if (compteur.score_player == 3 || compteur.score_adversaire == 3) {
+            if (compteur.scorePlayer == 3 || compteur.scoreAdversaire == 3) {
                 // si le score du joueur est superieure au score de l'adversaire alors joueur
                 // gagne sinon perd
-                if (compteur.score_player > compteur.score_adversaire) {
+                if (compteur.scorePlayer > compteur.scoreAdversaire) {
                     System.out.println("Vous avez gagner félicitation");
                 } else {
                     System.out.println("Vous avez perdue la prochaine fois sera la bonne");
@@ -67,8 +67,8 @@ public class App {
                         System.out.println("Adversaire : pierre");
                         System.out.println("Egalité avec la pierre veuillez recommencer");
                         System.out.println(
-                                "Player " + compteur.score_player + " - " +
-                                        compteur.score_adversaire + " Adversaire");
+                                "Player " + compteur.scorePlayer + " - " +
+                                        compteur.scoreAdversaire + " Adversaire");
                         game();
                         break;
                     case feuille:
@@ -79,8 +79,8 @@ public class App {
                         compteur.incrementPartie();
                         System.out.println("*** SCORE ***");
                         System.out.println(
-                                "Player " + compteur.score_player + " - " +
-                                        compteur.score_adversaire + " Adversaire");
+                                "Player " + compteur.scorePlayer + " - " +
+                                        compteur.scoreAdversaire + " Adversaire");
                         break;
                     case ciseau:
                         System.out.println("Player : pierre");
@@ -89,8 +89,8 @@ public class App {
                         compteur.incrementPlayer();
                         compteur.incrementPartie();
                         System.out
-                                .println("Player " + compteur.score_player + " - " +
-                                        compteur.score_adversaire + " Adversaire");
+                                .println("Player " + compteur.scorePlayer + " - " +
+                                        compteur.scoreAdversaire + " Adversaire");
                         break;
                     case lezard:
                         System.out.println("Player : pierre");
@@ -99,8 +99,8 @@ public class App {
                         compteur.incrementPlayer();
                         compteur.incrementPartie();
                         System.out
-                                .println("Player " + compteur.score_player + " - " +
-                                        compteur.score_adversaire + " Adversaire");
+                                .println("Player " + compteur.scorePlayer + " - " +
+                                        compteur.scoreAdversaire + " Adversaire");
                         break;
                     case spock:
                         System.out.println("Player : pierre");
@@ -109,8 +109,8 @@ public class App {
                         compteur.incrementAdversaire();
                         compteur.incrementPartie();
                         System.out
-                                .println("Player " + compteur.score_player + " - " +
-                                        compteur.score_adversaire + " Adversaire");
+                                .println("Player " + compteur.scorePlayer + " - " +
+                                        compteur.scoreAdversaire + " Adversaire");
                         break;
                 }
                 break;
@@ -123,16 +123,16 @@ public class App {
                         compteur.incrementPlayer();
                         compteur.incrementPartie();
                         System.out
-                                .println("Player " + compteur.score_player + " - " +
-                                        compteur.score_adversaire + " Adversaire");
+                                .println("Player " + compteur.scorePlayer + " - " +
+                                        compteur.scoreAdversaire + " Adversaire");
                         break;
                     case feuille:
                         System.out.println("Player : feuille");
                         System.out.println("Adversaire : feuille");
                         System.out.println("Egalité avec la feuille veuillez recommencer");
                         System.out
-                                .println("Player " + compteur.score_player + " - " +
-                                        compteur.score_adversaire + " Adversaire");
+                                .println("Player " + compteur.scorePlayer + " - " +
+                                        compteur.scoreAdversaire + " Adversaire");
                         game();
                         break;
                     case ciseau:
@@ -142,8 +142,8 @@ public class App {
                         compteur.incrementAdversaire();
                         compteur.incrementPartie();
                         System.out
-                                .println("Player " + compteur.score_player + " - " +
-                                        compteur.score_adversaire + " Adversaire");
+                                .println("Player " + compteur.scorePlayer + " - " +
+                                        compteur.scoreAdversaire + " Adversaire");
                         break;
                     case lezard:
                         System.out.println("Player : feuille");
@@ -152,8 +152,8 @@ public class App {
                         compteur.incrementAdversaire();
                         compteur.incrementPartie();
                         System.out
-                                .println("Player " + compteur.score_player + " - " +
-                                        compteur.score_adversaire + " Adversaire");
+                                .println("Player " + compteur.scorePlayer + " - " +
+                                        compteur.scoreAdversaire + " Adversaire");
                         break;
                     case spock:
                         System.out.println("Player : feuille");
@@ -162,8 +162,8 @@ public class App {
                         compteur.incrementPlayer();
                         compteur.incrementPartie();
                         System.out
-                                .println("Player " + compteur.score_player + " - " +
-                                        compteur.score_adversaire + " Adversaire");
+                                .println("Player " + compteur.scorePlayer + " - " +
+                                        compteur.scoreAdversaire + " Adversaire");
                         break;
                 }
                 break;
@@ -176,8 +176,8 @@ public class App {
                         compteur.incrementAdversaire();
                         compteur.incrementPartie();
                         System.out
-                                .println("Player " + compteur.score_player + " - " +
-                                        compteur.score_adversaire + " Adversaire");
+                                .println("Player " + compteur.scorePlayer + " - " +
+                                        compteur.scoreAdversaire + " Adversaire");
                         break;
                     case feuille:
                         System.out.println("Player : ciseau");
@@ -186,16 +186,16 @@ public class App {
                         compteur.incrementPlayer();
                         compteur.incrementPartie();
                         System.out
-                                .println("Player " + compteur.score_player + " - " +
-                                        compteur.score_adversaire + " Adversaire");
+                                .println("Player " + compteur.scorePlayer + " - " +
+                                        compteur.scoreAdversaire + " Adversaire");
                         break;
                     case ciseau:
                         System.out.println("Player : ciseau");
                         System.out.println("Adversaire : ciseau");
                         System.out.println("Egalité avec le ciseau veuillez recommencer");
                         System.out
-                                .println("Player " + compteur.score_player + " - " +
-                                        compteur.score_adversaire + " Adversaire");
+                                .println("Player " + compteur.scorePlayer + " - " +
+                                        compteur.scoreAdversaire + " Adversaire");
                         game();
                         break;
                     case lezard:
@@ -205,8 +205,8 @@ public class App {
                         compteur.incrementPlayer();
                         compteur.incrementPartie();
                         System.out
-                                .println("Player " + compteur.score_player + " - " +
-                                        compteur.score_adversaire + " Adversaire");
+                                .println("Player " + compteur.scorePlayer + " - " +
+                                        compteur.scoreAdversaire + " Adversaire");
                         break;
                     case spock:
                         System.out.println("Player : ciseau");
@@ -215,7 +215,7 @@ public class App {
                         compteur.incrementAdversaire();
                         compteur.incrementPartie();
                         System.out.println(
-                                "Player " + compteur.score_player + " - " + compteur.score_adversaire + " Adversaire");
+                                "Player " + compteur.scorePlayer + " - " + compteur.scoreAdversaire + " Adversaire");
                         break;
                 }
                 break;
@@ -228,7 +228,7 @@ public class App {
                         compteur.incrementAdversaire();
                         compteur.incrementPartie();
                         System.out.println(
-                                "Player " + compteur.score_player + " - " + compteur.score_adversaire + " Adversaire");
+                                "Player " + compteur.scorePlayer + " - " + compteur.scoreAdversaire + " Adversaire");
                         break;
                     case feuille:
                         System.out.println("Player : lézard");
@@ -237,7 +237,7 @@ public class App {
                         compteur.incrementPlayer();
                         compteur.incrementPartie();
                         System.out.println(
-                                "Player " + compteur.score_player + " - " + compteur.score_adversaire + " Adversaire");
+                                "Player " + compteur.scorePlayer + " - " + compteur.scoreAdversaire + " Adversaire");
                         break;
                     case ciseau:
                         System.out.println("Player : lézard");
@@ -246,14 +246,14 @@ public class App {
                         compteur.incrementAdversaire();
                         compteur.incrementPartie();
                         System.out.println(
-                                "Player " + compteur.score_player + " - " + compteur.score_adversaire + " Adversaire");
+                                "Player " + compteur.scorePlayer + " - " + compteur.scoreAdversaire + " Adversaire");
                         break;
                     case lezard:
                         System.out.println("Player : lézard");
                         System.out.println("Adversaire : lézard");
                         System.out.println("Egalité avec le lézard veuillez recommencer");
                         System.out.println(
-                                "Player " + compteur.score_player + " - " + compteur.score_adversaire + " Adversaire");
+                                "Player " + compteur.scorePlayer + " - " + compteur.scoreAdversaire + " Adversaire");
                         game();
                         break;
                     case spock:
@@ -263,7 +263,7 @@ public class App {
                         compteur.incrementPlayer();
                         compteur.incrementPartie();
                         System.out.println(
-                                "Player " + compteur.score_player + " - " + compteur.score_adversaire + " Adversaire");
+                                "Player " + compteur.scorePlayer + " - " + compteur.scoreAdversaire + " Adversaire");
                         break;
                 }
                 break;
@@ -276,7 +276,7 @@ public class App {
                         compteur.incrementPlayer();
                         compteur.incrementPartie();
                         System.out.println(
-                                "Player " + compteur.score_player + " - " + compteur.score_adversaire + " Adversaire");
+                                "Player " + compteur.scorePlayer + " - " + compteur.scoreAdversaire + " Adversaire");
                         break;
                     case feuille:
                         System.out.println("Player : Spock");
@@ -285,7 +285,7 @@ public class App {
                         compteur.incrementAdversaire();
                         compteur.incrementPartie();
                         System.out.println(
-                                "Player " + compteur.score_player + " - " + compteur.score_adversaire + " Adversaire");
+                                "Player " + compteur.scorePlayer + " - " + compteur.scoreAdversaire + " Adversaire");
                         break;
                     case ciseau:
                         System.out.println("Player : Spock");
@@ -294,7 +294,7 @@ public class App {
                         compteur.incrementPlayer();
                         compteur.incrementPartie();
                         System.out.println(
-                                "Player " + compteur.score_player + " - " + compteur.score_adversaire + " Adversaire");
+                                "Player " + compteur.scorePlayer + " - " + compteur.scoreAdversaire + " Adversaire");
                         break;
                     case lezard:
                         System.out.println("Player : Spock");
@@ -303,14 +303,14 @@ public class App {
                         compteur.incrementAdversaire();
                         compteur.incrementPartie();
                         System.out.println(
-                                "Player " + compteur.score_player + " - " + compteur.score_adversaire + " Adversaire");
+                                "Player " + compteur.scorePlayer + " - " + compteur.scoreAdversaire + " Adversaire");
                         break;
                     case spock:
                         System.out.println("Player : Spock");
                         System.out.println("Adversaire : Spock");
                         System.out.println("Egalité avec Spock veuillez recommencer");
                         System.out.println(
-                                "Player " + compteur.score_player + " - " + compteur.score_adversaire + " Adversaire");
+                                "Player " + compteur.scorePlayer + " - " + compteur.scoreAdversaire + " Adversaire");
                         game();
                         break;
                 }
